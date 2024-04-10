@@ -66,4 +66,11 @@ public class AlcoholStore {
         }
     }
 
+    public void editDrink(int indexDrink, int editPrice) {
+        if (indexDrink >= 0) {
+            drinks[indexDrink].setPrice(editPrice);
+        } else {
+            throw new IllegalArgumentException("Нет такого товара");
+        }
+    }
 }
