@@ -60,6 +60,7 @@ public class main {
                     try {
                         indexProduct = store1.getDrinkIndex(drink);
                         store1.editDrink(indexProduct, editPrice);
+                        System.out.println("Цена изменена");
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
