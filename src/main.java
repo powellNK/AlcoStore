@@ -64,6 +64,7 @@ public class main {
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
+                    reader.nextLine();
                     break;
             }
         } while (!command.equals("STOP") && !command.equals("stop"));
